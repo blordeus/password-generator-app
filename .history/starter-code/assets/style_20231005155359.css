@@ -1,0 +1,24 @@
+:root {
+    /* colors */
+    --clr-darkGrey: 248 10% 15%;
+    --clr-grey: 251 9% 53%;
+    --clr-almostWhite: 252 11% 91%;
+    --clr-veryDarkGrey: 248 15% 11%;
+    --clr-neonGreen: 127 100% 82%;
+    --clr-red: 0 91% 63%;
+    --clr-orange: 13 95% 66%;
+    --clr-yellow: 42 91% 68%;
+  
+    /* font-sizes */
+    --fs-1: 1.5rem;
+    --fs-2: 1.125rem;
+    --fs-3: 1rem;
+  }
+  
+  @media (min-width: 35em) {
+    :root {
+      --fs-1: 2rem;
+      --fs-2: 1.5rem;
+      --fs-3: 1.125rem;
+    }
+  }

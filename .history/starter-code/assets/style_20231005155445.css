@@ -1,0 +1,91 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+    /* colors */
+    --clr-darkGrey: 248 10% 15%;
+    --clr-grey: 251 9% 53%;
+    --clr-almostWhite: 252 11% 91%;
+    --clr-veryDarkGrey: 248 15% 11%;
+    --clr-neonGreen: 127 100% 82%;
+    --clr-red: 0 91% 63%;
+    --clr-orange: 13 95% 66%;
+    --clr-yellow: 42 91% 68%;
+  
+    /* font-sizes */
+    --fs-1: 1.5rem;
+    --fs-2: 1.125rem;
+    --fs-3: 1rem;
+  }
+  
+  @media (min-width: 35em) {
+    :root {
+      --fs-1: 2rem;
+      --fs-2: 1.5rem;
+      --fs-3: 1.125rem;
+    }
+  }
+  
+  /* ------------------- */
+  /* Reset               */
+  /* ------------------- */
+  
+  /* https://piccalil.li/blog/a-modern-css-reset/ */
+  
+  /* Box sizing */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Reset margins */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  figure,
+  picture {
+    margin: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-weight: 400;
+  }
+  
+  /* set up the body */
+  body {
+    font-family: "JetBrains Mono", monospace;
+    font-size: var(--fs-3);
+    font-weight: 700;
+    color: hsl(var(--clr-almostWhite));
+    background-color: hsl(var(--clr-veryDarkGrey));
+    min-height: 100vh;
+  
+    overflow-x: hidden;
+  }
+
+  /* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
