@@ -396,12 +396,8 @@ select {
   
   .button:hover {
     background-color: hsl(var(--clr-darkGrey));
-    color: hsl(var(--clr-neonGreen));
+    color: hsl127 100% 82%;;
     cursor: pointer;
-  }
-
-  .button:hover p {
-    color: hsl(var(--clr-neonGreen));
   }
   
   .button svg {

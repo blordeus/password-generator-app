@@ -1,17 +1,18 @@
 /* ------------------- */
 /* Custom properties   */
+
 /* ------------------- */
 
 :root {
     /* colors */
-    --clr-darkGrey: 248 10% 15%;
-    --clr-grey: 251 9% 53%;
-    --clr-almostWhite: 252 11% 91%;
-    --clr-veryDarkGrey: 248 15% 11%;
-    --clr-neonGreen: 127 100% 82%;
-    --clr-red: 0 91% 63%;
-    --clr-orange: 13 95% 66%;
-    --clr-yellow: 42 91% 68%;
+    --clr-darkGrey: hsl(248 10% 15%);
+    --clr-grey: hsl(251 9% 53%);
+    --clr-almostWhite: hsl(252 11% 91%);
+    --clr-veryDarkGrey: hsl(248 15% 11%);
+    --clr-neonGreen: hsl(127 100% 82%);
+    --clr-red: hsl(0 91% 63%);
+    --clr-orange: hsl(13 95% 66%);
+    --clr-yellow: hsl(42 91% 68%);
   
     /* font-sizes */
     --fs-1: 1.5rem;
@@ -398,10 +399,6 @@ select {
     background-color: hsl(var(--clr-darkGrey));
     color: hsl(var(--clr-neonGreen));
     cursor: pointer;
-  }
-
-  .button:hover p {
-    color: hsl(var(--clr-neonGreen));
   }
   
   .button svg {

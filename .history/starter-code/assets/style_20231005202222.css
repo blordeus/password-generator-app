@@ -90,40 +90,6 @@ select {
   font: inherit;
 }
 
-/* Utility classes     */
-/* ------------------- */
-
-/* general */
-
-.flex {
-    display: flex;
-  }
-  
-  .grid {
-    display: grid;
-  }
-  
-  .d-block {
-    display: block;
-  }
-  
-  .flow > *:where(:not(:first-child)) {
-    margin-top: var(--flow-space, 1rem);
-  }
-  
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap; /* added line */
-    border: 0;
-  }
-  
-
 /* colors */
 
 .bg-veryDark {
@@ -398,10 +364,6 @@ select {
     background-color: hsl(var(--clr-darkGrey));
     color: hsl(var(--clr-neonGreen));
     cursor: pointer;
-  }
-
-  .button:hover p {
-    color: hsl(var(--clr-neonGreen));
   }
   
   .button svg {

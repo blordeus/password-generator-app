@@ -400,9 +400,7 @@ select {
     cursor: pointer;
   }
 
-  .button:hover p {
-    color: hsl(var(--clr-neonGreen));
-  }
+  .button:hover p
   
   .button svg {
     margin-left: 1rem;

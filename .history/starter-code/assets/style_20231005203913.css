@@ -4,8 +4,8 @@
 
 :root {
     /* colors */
-    --clr-darkGrey: 248 10% 15%;
-    --clr-grey: 251 9% 53%;
+    --clr-darkGrey: hsl(248 10% 15%);
+    --clr-grey: (251 9% 53%);
     --clr-almostWhite: 252 11% 91%;
     --clr-veryDarkGrey: 248 15% 11%;
     --clr-neonGreen: 127 100% 82%;
@@ -398,10 +398,6 @@ select {
     background-color: hsl(var(--clr-darkGrey));
     color: hsl(var(--clr-neonGreen));
     cursor: pointer;
-  }
-
-  .button:hover p {
-    color: hsl(var(--clr-neonGreen));
   }
   
   .button svg {

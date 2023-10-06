@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Password generator app</title>
 </head>
-<body class="bg-dar">
+<body>
 <main class="main">
   
     <h1 class="fs-3 title text-grey">Password Generator</h1>
@@ -20,7 +20,7 @@
       <p id="fieldText" class="fieldText text-grey">P4$5W0rD!</p>
       <div class="copy flex">
         <p id="copyMsg" class="fs-3 uppercase text-green">copied</p>
-        <img id="copyIcon" class="copyIcon" src="./assets/images/icon-copy.svg" alt="">
+        <img id="copyIcon" src="./assets/images/icon-copy.svg" alt="">
       </div>
     </div>
   
@@ -28,23 +28,23 @@
       <label for="slider" class="sliderLabel flex">Character Length <span class="sliderValue fs-1 text-green" id="sliderValue"></span></label>
       <input type="range" class="slider" name="slider" id="slider" min="5" max="15" value="8">
       <div class="checkboxes flex">
-        <label for="inclUppercase" class="checkboxLabel">
+        <label for="inclUppercase" class="checkboxLabel" id="inclUppercase">
           <input type="checkbox" name="inclUppercase" id="inclUppercase">
           Include Uppercase Letters
           <span class="checkmark"><img src="./assets/images/icon-check.svg" alt="checked-icon"></span>
         </label>
-        <label for="inclLowercase" class="checkboxLabel">
+        <label for="" class="checkboxLabel">
           <input type="checkbox" name="inclLowercase" id="inclLowercase">
           Include Lowercase Letters
           <span class="checkmark"><img src="./assets/images/icon-check.svg" alt="checked-icon"></span>
         </label>
-        <label for="inclNumber" class="checkboxLabel">
-          <input type="checkbox" name="inclNumber" id="inclNumber">
+        <label for="" class="checkboxLabel">
+          <input type="checkbox" name="inclNumbers" id="inclNumbers">
           Include Numbers
           <span class="checkmark"><img src="./assets/images/icon-check.svg" alt="checked-icon"></span>
         </label>
-        <label for="inclSymbol" class="checkboxLabel">
-          <input type="checkbox" name="inclSymbol" id="inclSymbol">
+        <label for="" class="checkboxLabel">
+          <input type="checkbox" name="inclSymbols" id="inclSymbols">
           Include Symbols
           <span class="checkmark"><img src="./assets/images/icon-check.svg" alt="checked-icon"></span>
         </label>
@@ -62,15 +62,7 @@
         <div id="bar4" class="bars bar4"></div>
       </div>
     </div>
-    
-    
-      <button id="generateBtn" class="uppercase fs-3 bg-green text-dark button d-flex justify-content-center align-items-center">
-        <p>Generate</p> 
-        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path fill="#24232C" d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/></svg>
-      </button>
-    
-
-    <p id="alert" class="fs-3 alert">Please select one or more options</p>
+    <button id="generateBtn" class="uppercase fs-3 bg">Generate</button>
 </main>
 
 </body>
